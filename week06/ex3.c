@@ -60,6 +60,7 @@ int main() {
     for (int i = 0; i < N; i++)                                                     
         printf("P%d\t %d\t %d\t %d\t %d\t %d\n", i+1, at[i], bt_f[i], tat[i], et[i], wt[i]);            
 
-    printf("Average TAT %f\n", totTAT/N);                        
-    printf("Average WT %f\n", totWT/N);                              
+    double AVG_TAT = totTAT/N, AVG_WT = totWT/N;
+    printf("Average TAT %f\n", AVG_TAT);                        
+    printf("Average WT %f\n", AVG_WT);                            
 }
