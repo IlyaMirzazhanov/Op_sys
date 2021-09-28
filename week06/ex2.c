@@ -52,7 +52,7 @@ int main() {
         totWT+=wt[POS];
     }
 
-    printf("P#\t AT\t BT\t TAT\t WT\t ET\n\n");
+    printf("P\t AT\t BT\t TAT\t WT\t ET\n\n");
     for (int i = 0; i < N; i++)                                                         
     printf("P%d\t %d\t %d\t %d\t %d\t %d\n", i+1, at[i], bt[i], tat[i], wt[i], et[i]);                                  
 
