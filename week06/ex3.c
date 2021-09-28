@@ -56,7 +56,7 @@ int main() {
     }
 
     // Formatting output
-    printf("P#\t AT\t BT\t TAT\t ET\t WT\n\n");                                 
+    printf("P\t AT\t BT\t TAT\t ET\t WT\n\n");                                 
     for (int i = 0; i < N; i++)                                                     
         printf("P%d\t %d\t %d\t %d\t %d\t %d\n", i+1, at[i], bt_f[i], tat[i], et[i], wt[i]);            
 
