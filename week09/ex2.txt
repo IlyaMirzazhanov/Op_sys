@@ -1,0 +1,2 @@
+If we just refer to one page at a time, the hit/miss rate will be the highest
+The hit/miss rate will be minimal if we reference non-repeating pages
