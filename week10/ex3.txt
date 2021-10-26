@@ -1,0 +1,35 @@
+chmod +x _ex3.txt
+total 8
+-rw-r--r-- 3 ilya ilya   0 Oct 26 13:55 _ex1_1.txt
+-rw-r--r-- 3 ilya ilya   0 Oct 26 13:55 _ex1_2.txt
+-rw-r--r-- 3 ilya ilya   0 Oct 26 13:55 _ex1.txt
+-rw-r--r-- 1 ilya ilya  55 Oct 26 13:58 ex1.txt
+-rw-r--r-- 1 ilya ilya 495 Oct 26 14:17 ex2.txt
+-rw-r--r-- 1 ilya ilya   0 Oct 26 14:22 _ex3.txt
+-rw-r--r-- 1 ilya ilya   0 Oct 26 14:22 ex3.txt
+
+chmod uo=+rwx _ex3.txt
+total 12
+-rw-r--r-- 3 ilya ilya   0 Oct 26 13:55 _ex1_1.txt
+-rw-r--r-- 3 ilya ilya   0 Oct 26 13:55 _ex1_2.txt
+-rw-r--r-- 3 ilya ilya   0 Oct 26 13:55 _ex1.txt
+-rw-r--r-- 1 ilya ilya  55 Oct 26 13:58 ex1.txt
+-rw-r--r-- 1 ilya ilya 495 Oct 26 14:16 ex2.txt
+-rwxr--rwx 1 ilya ilya   0 Oct 26 14:23 _ex3.txt
+-rw-r--r-- 1 ilya ilya 380 Oct 26 14:24 ex3.txt
+
+
+chmod -R g=u _ex3.txt
+total 12
+-rw-r--r-- 3 ilya ilya   0 Oct 26 13:56 _ex1_1.txt
+-rw-r--r-- 3 ilya ilya   0 Oct 26 13:56 _ex1_2.txt
+-rw-r--r-- 3 ilya ilya   0 Oct 26 13:56 _ex1.txt
+-rw-r--r-- 1 ilya ilya  55 Oct 26 13:58 ex1.txt
+-rw-r--r-- 1 ilya ilya 495 Oct 26 14:16 ex2.txt
+-rwxrwxrwx 1 ilya ilya   0 Oct 26 14:23 _ex3.txt
+-rw-r--r-- 1 ilya ilya 761 Oct 26 14:24 ex3.txt
+
+
+660 - group owner can read and write, others have no permissions.
+775 - group owner and group can read, write and execute, others have permission to only read and execute.
+777 - everyone can read, write and execute.
