@@ -1,1 +1,7 @@
 
+..
+file1.txt
+.
+ex2.c
+file2.txt
+ex2
