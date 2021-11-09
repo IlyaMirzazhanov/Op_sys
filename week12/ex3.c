@@ -26,7 +26,9 @@ int main(void) {
     const char *dev = "/dev/input/by-path/platform-i8042-serio-0-event-kbd";
     struct input_event ev;
     int b1 = 16, b2 = 25, b3 = 30, b4 = 38, b5 = 20, b6 = 44, b7 = 50; // borders for letters code
-    int fd = open(dev, O_RDONLY);
+    int fd;
+	
+	fd = open(dev, O_RDONLY);
 
 
 	if (fd == -1) {
@@ -34,7 +36,7 @@ int main(void) {
 	  return EXIT_FAILURE;
 	}
 	
-	while (1) {
+	while(1) {
 		read(fd, &ev, sizeof(ev));
 
 	if (ev.type == EV_KEY && ev.value >= 0 && ev.value < 2) {
