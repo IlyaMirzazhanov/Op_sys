@@ -51,3 +51,7 @@
     d258-d25b : ahci
   d260-d26f : 0000:00:0d.0
     d260-d26f : ahci
+    
+    dma1 - The Linux kernel configuration item
+    pic1 - connected with interrupt controller
+    timer1 - connected with timer
