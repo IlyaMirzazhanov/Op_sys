@@ -6,7 +6,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdbool.h> 	 	 	 	 	 	  	
-//author Ilya Mirzazhanov
+//author Ilya Mirzazhanov BS20-06
 static const char *const evval[2] = { 	 	 	 	 	 	  	 	
     "RELEASED",
     "PRESSED "
