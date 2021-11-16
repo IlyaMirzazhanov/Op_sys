@@ -1,0 +1,14 @@
+//by Ilya Mirzazhanov BS20-06
+Prevention algorithms check that at least one of the necessary conditions like mutual 
+exclusion, no preemption, hold and wait, and circular wait does not occure. 
+But large part of prevention algorithms have poor resource utilization, so the result is lowered throughputs.
+
+Avoidance algorithms need to know maximum amount of resources every process will need. 
+Based on all these info we can decide should a process wait or not. We're using 
+Banker's algorithm here (but it is not very fast).
+
+Recovery - we have to break the deadlock. It can be done in a lot of ways like aborting some processes to eliminate 
+the circular wait condition causing the deadlock and also preempting resources from some processes that are deadlocked.
+Bad side of this is that we're dealing with consequences of deadlock, therefore bad thing already happened.
+
+All strategies are useful, but in different circumstances we need to choose the most suitable.
